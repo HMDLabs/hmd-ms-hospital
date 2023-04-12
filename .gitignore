@@ -159,3 +159,4 @@ src/python/build/lib/hmd_lang_hospital/schemas/hmd_lang_hospital/hospital_owns_d
 src/python/build/lib/hmd_lang_hospital/schemas/hmd_lang_hospital/hospital.hms
 src/python/build/lib/hmd_ms_hospital/__init__.py
 src/python/build/lib/hmd_ms_hospital/operations.py
+.mickey_cache/
