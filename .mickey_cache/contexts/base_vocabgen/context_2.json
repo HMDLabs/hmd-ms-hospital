@@ -1,0 +1,48 @@
+{
+  "data": {
+    "name": "hospital",
+    "namespace": "hmd_lang_hospital",
+    "metatype": "noun",
+    "attributes": {
+      "name": {
+        "type": "string",
+        "required": true,
+        "description": "The name of the item.",
+        "business_id": true
+      },
+      "address": {
+        "type": "string",
+        "description": "physical address of the hospital",
+        "required": true
+      },
+      "opening_hours": {
+        "type": "string",
+        "description": "text describing the opening hours of the hospital, e.g. Monday through Sunday, all day"
+      },
+      "geo": {
+        "type": "string",
+        "description": "geospatial coordinates"
+      },
+      "logo": {
+        "type": "string",
+        "description": "URL to hospital logo"
+      },
+      "telephone": {
+        "type": "string",
+        "description": "The telephone number."
+      },
+      "legal_name": {
+        "type": "string",
+        "description": "The official name of the organization, e.g. the registered company name."
+      },
+      "lei_code": {
+        "type": "string",
+        "description": "An organization identifier that uniquely identifies a legal entity as defined in ISO 17442."
+      },
+      "number_of_employees": {
+        "type": "integer",
+        "description": "The number of employees in an organization, e.g. business."
+      }
+    }
+  }
+}

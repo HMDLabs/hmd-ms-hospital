@@ -1,0 +1,17 @@
+.. hmd-ms-hospital documentation master file
+
+Welcome to hmd-ms-hospital's documentation!
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   classes/index
+   
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

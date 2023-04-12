@@ -1,0 +1,96 @@
+{
+  "contexts": ["ref:entity_data"],
+  "templates": ["hmd-tmpl-vocabgen/python_lib"],
+  "hooks": [
+    "./src/mickey/hooks/process_python_contexts.py",
+    "./src/mickey/hooks/add_jinja_filters.py"
+  ],
+  "template_packages": ["./src/mickey/templates"],
+  "context_definitions": {
+    "schemas": {
+      "each": ["src/schemas/**/*.hms"]
+    },
+    "nouns": {
+      "extend": "ref:schemas",
+      "filter": {
+        "property": "metatype",
+        "operator": "=",
+        "value": "noun"
+      }
+    },
+    "relationships": {
+      "extend": "ref:schemas",
+      "filter": {
+        "property": "metatype",
+        "operator": "=",
+        "value": "relationship"
+      }
+    },
+    "base_data": {
+      "struct": {
+        "data": {
+          "struct": {
+            "nouns": { "extend": "ref:nouns" },
+            "relationships": { "extend": "ref:relationships" }
+          },
+          "first": true
+        }
+      }
+    },
+    "sql_data": {
+      "struct": {
+        "entities": {
+          "extend": "ref:schemas"
+        }
+      },
+      "first": true
+    },
+    "puml_data": {
+      "struct": {
+        "data": {
+          "struct": {
+            "entities": {
+              "struct": {
+                "nouns": { "extend": "ref:nouns" },
+                "relationships": { "extend": "ref:relationships" }
+              },
+              "first": true
+            }
+          },
+          "first": true
+        }
+      },
+      "first": true
+    },
+    "entity_data": {
+      "extend": "ref:schemas",
+      "struct": {
+        "data": {
+          "extend": "ref:schemas",
+          "filter": {
+            "property": "name",
+            "operator": "=",
+            "value": "{name}"
+          },
+          "first": true
+        },
+        "from": {
+          "extend": "ref:relationships",
+          "filter": {
+            "property": "ref_from",
+            "operator": "=",
+            "value": "{namespace}.{name}"
+          }
+        },
+        "to": {
+          "extend": "ref:relationships",
+          "filter": {
+            "property": "ref_to",
+            "operator": "=",
+            "value": "{namespace}.{name}"
+          }
+        }
+      }
+    }
+  }
+}

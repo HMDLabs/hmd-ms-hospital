@@ -1,0 +1,26 @@
+[
+  {
+    "config": "./src/mickey/templates/python_lib_config.json"
+  },
+  {
+    "config": "./src/mickey/templates/python_client_config.json"
+  },
+  {
+    "config": "./src/mickey/templates/typescript_lib_config.json"
+  },
+  {
+    "config": "./src/mickey/templates/class_puml_config.json"
+  },
+  {
+    "config": "./src/mickey/templates/docs_config.json"
+  },
+  {
+    "config": "./src/mickey/templates/postgres_view_all_config.json"
+  },
+  {
+    "config": "./src/mickey/templates/postgres_views_config.json"
+  },
+  {
+    "config": "./src/mickey/templates/opa_bundles_config.json"
+  }
+]

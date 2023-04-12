@@ -1,0 +1,17 @@
+.. {{ namespace }}.{{ name }}
+
+{{ namespace }}.{{ name }}
+=============================================
+
+**Metatype**: {{ metatype }}
+{% if metatype == 'relationship' %}
+**Ref From**: {{ ref_from }}
+**Ref To**: {{ ref_to }}
+{% endif %}
+
+Attributes
+++++++++++
+
+{% for attr, value in attributes.items() %}
+* **{{ attr }} ({{value.type}})** {% if value.required %}(required){% endif %}: {{ value.description }}
+{% endfor %}

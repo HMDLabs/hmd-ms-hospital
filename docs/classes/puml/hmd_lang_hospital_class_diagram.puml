@@ -1,0 +1,38 @@
+# The code in this file is generated automatically. 
+# DO NOT EDIT!
+@startuml
+
+
+    
+class Device << Noun >> {
+    string code
+    string legal_status
+    string alternate_name
+    string description
+    string name
+    string serial_number
+}
+    
+class Hospital << Noun >> {
+    string name
+    string address
+    string opening_hours
+    string geo
+    string logo
+    string telephone
+    string legal_name
+    string lei_code
+    integer number_of_employees
+}
+    
+    
+class HospitalOwnsDevice << Relationship >> #LightGreen {
+    timestamp installation_date
+}
+    
+
+Hospital -- HospitalOwnsDevice
+HospitalOwnsDevice -- Device
+
+
+@enduml
