@@ -1,0 +1,18 @@
+{
+  "_org": "hmd",
+  "_repo_type": "ms-",
+  "short_name": "hospital",
+  "project_name": "hmd-ms-hospital",
+  "repo_name": "hmd-ms-hospital",
+  "description": "Hospital Microservice",
+  "_author": "Alex Burgoon",
+  "_author_email": "alex.burgoon@hmdlabs.io",
+  "__module_name": "hmd_ms_hospital",
+  "__lang_module_name": "hmd_lang_hospital",
+  "_npm_scope": "HMDLabs",
+  "_npm_registry_url": "https://npm.pkg.github.com/",
+  "_github_org": "HMDLabs",
+  "__git_url": "git+https://github.com/HMDLabs/hmd-ms-hospital.git",
+  "_template": "/tmp/tmpeb1q_oyi/hmd_cli_repo",
+  "_output_dir": "/home/aburg/demo-ns/projects"
+}

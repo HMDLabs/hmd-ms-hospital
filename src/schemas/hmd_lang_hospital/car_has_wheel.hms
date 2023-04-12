@@ -1,0 +1,15 @@
+{
+  "name": "car_has_wheel",
+  "namespace": "hmd_lang_hospital",
+  "metatype": "relationship",
+  "ref_from": "hmd_lang_hospital.car",
+  "ref_to": "hmd_lang_hospital.wheel",
+  "attributes": {
+    "position": {
+      "type": "string"
+    },
+    "installed_date": {
+      "type": "timestamp"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@hmdlabs/ms-hospital",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": {
+    "name": "Alex Burgoon",
+    "email": "alex.burgoon@hmdlabs.io"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HMDLabs/hmd-ms-hospital.git"
+  },
+  "hmd": {
+    "name": "hospital",
+    "type": "library"
+  },
+  "dependencies": {
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "build:dev": "NODE_ENV=development client-scripts build",
+    "build": "NODE_ENV=production client-scripts build",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.19",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4"
+  }
+}

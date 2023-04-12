@@ -1,0 +1,19 @@
+{
+  "name": "car",
+  "namespace": "hmd_lang_hospital",
+  "metatype": "noun",
+  "attributes": {
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "mileage": {
+      "type": "integer"
+    }
+  }
+}
