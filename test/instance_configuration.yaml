@@ -1,0 +1,28 @@
+dependencies: {}
+deployment_id: aaa
+hmd_log_level:
+  HMD: INFO
+instance_name: hmd_ms_hospital
+memory_size: 256
+repo_name: hmd-ms-hospital
+service_config:
+  hmd_db_engines:
+    postgres:
+      engine_config:
+        db_name: hmd_ms_hospital
+        host: db
+        password: hmd_ms_hospital
+        user: hmd_ms_hospital
+      engine_type: postgres
+  hmd_entity_config:
+    __default__:
+      persistence:
+      - postgres
+  loader_config:
+    base:
+    - hmd_lang_hospital
+  operations_modules:
+  - hmd_ms_base.crud_operations
+  - hmd_ms_hospital.operations
+  service_loader: base
+version: '0.1'

@@ -143,3 +143,19 @@ src/typescript/*
 
 src/postgresql/
 src/opa-bundles/
+bender/docker-compose.yaml
+bender/log.html
+bender/output.xml
+bender/report.html
+.gitignore
+src/notebooks/.ipynb_checkpoints/example-checkpoint.ipynb
+src/python/build/lib/hmd_lang_hospital/__init__.py
+src/python/build/lib/hmd_lang_hospital/device.py
+src/python/build/lib/hmd_lang_hospital/hmd_lang_hospital_client.py
+src/python/build/lib/hmd_lang_hospital/hospital_owns_device.py
+src/python/build/lib/hmd_lang_hospital/hospital.py
+src/python/build/lib/hmd_lang_hospital/schemas/hmd_lang_hospital/device.hms
+src/python/build/lib/hmd_lang_hospital/schemas/hmd_lang_hospital/hospital_owns_device.hms
+src/python/build/lib/hmd_lang_hospital/schemas/hmd_lang_hospital/hospital.hms
+src/python/build/lib/hmd_ms_hospital/__init__.py
+src/python/build/lib/hmd_ms_hospital/operations.py

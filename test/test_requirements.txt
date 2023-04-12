@@ -1,0 +1,3 @@
+hmd-lib-robot-shared~=0.2.36
+
+-e ../src/python/

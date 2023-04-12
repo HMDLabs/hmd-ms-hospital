@@ -1,0 +1,30 @@
+{
+  "instance_name": "hmd_ms_hospital",
+  "memory_size": 256,
+  "hmd_log_level": {
+    "HMD": "INFO"
+  },
+  "service_config": {
+    "loader_config": {
+      "base": ["hmd_lang_hospital"]
+    },
+    "service_loader": "base",
+    "operations_modules": [
+      "hmd_ms_base.crud_operations",
+      "hmd_ms_hospital.operations"
+    ],
+    "hmd_db_engines": {
+      "postgres": {
+        "engine_type": "postgres",
+        "engine_config": {
+          "host": "db",
+          "user": "hmd_ms_hospital",
+          "password": "hmd_ms_hospital",
+          "db_name": "hmd_ms_hospital"
+        }
+      }
+    },
+    "hmd_entity_config": { "__default__": { "persistence": ["postgres"] } }
+  },
+  "dependencies": {}
+}

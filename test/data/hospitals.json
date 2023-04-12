@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Test City Medical Center",
+    "address": "1234 Test Avenue Test City, MI 00000",
+    "opening_hours": "24/7",
+    "geo": "42.344475, -82.967181"
+  },
+  {
+    "name": "Saint Tester Hospital",
+    "address": "1234 Test Ln  Some City, CA 00000",
+    "opening_hours": "24/7",
+    "geo": "37.558177, -122.469226"
+  },
+  {
+    "name": "Test Clinic",
+    "address": "1234 Test Ln Another City, IL 00000",
+    "opening_hours": "24/7",
+    "geo": "41.767658, -87.699347"
+  }
+]
